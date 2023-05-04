@@ -1,6 +1,9 @@
 const express = require('express'); 
 const app = express(); 
-const port = 3000; 
+const port = process.env.PORT || 3000; //variable de entorno para detectar un puerto disponible
+                            //process = proceso dentro del proyecto
+                            //env = entorno
+                            //PORT = nombre de la variable
 
 app.use(express.json());
 
